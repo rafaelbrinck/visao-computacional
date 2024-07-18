@@ -76,7 +76,7 @@ def main():
     video_path = 'controle-tempo-pit-stop/f1-car.mp4'
     video = cv2.VideoCapture(video_path)
 
-    # Fazendo a coleta de frames e fps do vídeo e transformando em segundos para coletar a informação exata de tempo
+    # Fazendo a coleta de frames e fps do vídeo e transformando em segundos para coletar a informação exata de tempo do vídeo
     frames = video.get(cv2.CAP_PROP_FRAME_COUNT)
     fps = int(video.get(cv2.CAP_PROP_FPS))
     segundos = int(frames / fps) 
